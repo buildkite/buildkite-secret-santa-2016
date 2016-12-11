@@ -13,7 +13,6 @@ steps:
   - command: "readme.bash"
     label: "🎄 Readme"
     artifact_paths: "*.gif"
-  - wait
 PIPELINE
 
 for name in $NAMES; do
@@ -29,7 +28,6 @@ PIPELINE
 done
 
 cat <<PIPELINE
-  - wait
   - command: "notify-santas-magical-unicorns.bash"
     label: "💌 :santa::skin-tone-3:"
 PIPELINE
