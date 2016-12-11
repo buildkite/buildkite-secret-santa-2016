@@ -14,7 +14,7 @@ The webhook receiver:
 
 * TODO
 
-## Screenshot
+## Screenshots
 
 TODO
 
