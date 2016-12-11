@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-echo "+++ :christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree:"
+echo "+++ :christmas_tree::unicorn_face::christmas_tree:"
 
 printf "\033[1;31m"
 cat <<"UNICORN"
