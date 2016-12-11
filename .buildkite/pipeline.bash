@@ -2,6 +2,12 @@
 
 set -eu
 
+NAMES=$(shuf -e Jess Harriet Sam Keith Tim)
+
+if [[ ! -z "${BUILDKITE:-}" ]]; then
+  buildkite-agent meta-data set names "$NAMES"
+fi
+
 cat <<PIPELINE
 steps:
   - command: "readme.bash"
@@ -10,7 +16,7 @@ steps:
   - wait
 PIPELINE
 
-for name in Jess Harriet Sam Keith Tim; do
+for name in $NAMES; do
   cat <<PIPELINE
   - block: "📝 $name"
     prompt: "Dear Secret Santa…"
