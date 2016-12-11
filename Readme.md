@@ -24,7 +24,7 @@ TODO
 
 ## Thanks
 
-Massive props to the brilliant [Carla Hackett](https://carlahackett.com/) for the beaut lettering 👌
+Massive props to the brilliant [Carla Hackett](http://carlahackett.com/) for the beaut lettering 👌
 
 ## License
 
