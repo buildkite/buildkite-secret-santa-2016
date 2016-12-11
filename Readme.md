@@ -1,6 +1,4 @@
-# Buildkite’s 2016 Secret Santa Pipeline
-
-<img alt="Buildkite Secret Santa 2016" src="buildkite-secret-santa-2016.gif" width="550" height="550">
+<img alt="Buildkite Secret Santa 2016" src="buildkite-secret-santa-2016.gif" width="275" height="275">
 
 The build pipeline:
 
