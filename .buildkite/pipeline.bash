@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -euo pipefail
 
 NAMES=$(shuf -e Jess Harriet Sam Keith Tim)
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -euo pipefail
 
 function inline_image {
   printf "\033]1338;url=%s;alt=%s\a\n" "$1" "$2"
