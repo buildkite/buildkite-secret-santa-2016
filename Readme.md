@@ -1,4 +1,4 @@
-<h1 align="center"><img alt="Buildkite Secret Santa 2016" src="logo.gif" width="550" height="550"></h1>
+<h1><img alt="Buildkite Secret Santa 2016" src="logo.gif" width="550" height="550"></h1>
 
 [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
