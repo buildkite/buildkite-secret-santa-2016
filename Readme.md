@@ -20,8 +20,6 @@ TODO
 
 ## Give it a try
 
-You can add this pipeline to your own Buildkite account:
-
 [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
 ## License
