@@ -6,7 +6,7 @@ function inline_image {
   printf "\033]1338;url=%s;alt=%s\a\n" "$1" "$2"
 }
 
-echo "+++ :christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite:"
+echo "+++ :christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree:"
 
 echo
 inline_image 'artifact://secret-santa.gif' 'Buildkite Secret Santa 2016'
