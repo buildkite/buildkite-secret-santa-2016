@@ -121,7 +121,7 @@ xmastree() {
   let t=t+1
  done
 
- echo "$(tput setaf 1)"
+ echo "$(tput sgr0)"
 }
 CENTER=0
 SPACE=" "
