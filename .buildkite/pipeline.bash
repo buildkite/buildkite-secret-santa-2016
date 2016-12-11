@@ -7,7 +7,7 @@ steps:
   - command: "readme.bash"
     label: "🎄 Readme"
     artifact_paths: "*.gif"
-  - block
+  - wait
 PIPELINE
 
 for name in Jess Harriet Sam Keith Tim; do
@@ -23,7 +23,7 @@ PIPELINE
 done
 
 cat <<PIPELINE
-  - block
+  - wait
   - command: "notify-santas-magical-unicorns.bash"
     label: "💌 :santa::skin-tone-3:"
 PIPELINE
