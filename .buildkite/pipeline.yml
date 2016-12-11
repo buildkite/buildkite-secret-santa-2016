@@ -1,3 +1,10 @@
 steps:
   - command: ".buildkite/steps/1-merry-xmas.bash"
     label: ":christmas_tree:"
+  - block: "Keith"
+  - block: "Harriet"
+  - block: "Sam"
+  - block: "Jess"
+  - block: "Tim"
+  - command: ".buildkite/steps/2-send-postcard-to-santa.bash"
+    label: ":love_letter:"
