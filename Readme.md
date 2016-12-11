@@ -22,6 +22,10 @@ TODO
 
 [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
+## Thanks
+
+Massive props to the brilliant [Carla Hackett](https://carlahackett.com/) for the beaut lettering 👌
+
 ## License
 
 See [Licence.md](Licence.md) (MIT)
