@@ -1,10 +1,18 @@
 steps:
   - command: ".buildkite/steps/1-merry-xmas.bash"
     label: "🎄"
-  - block: "✍🏼 Keith"
-  - block: "✍🏼 Harriet"
-  - block: "✍🏼 Sam"
-  - block: "✍🏼 Jess"
-  - block: "✍🏼 Tim"
+  - block: "📝 Keith"
+  - block: "📝 Harriet"
+  - block: "📝 Sam"
+  - block: "📝 Jess"
+  - block: "📝 Tim"
+    prompt: "Dear Secret Santa…"
+    fields:
+      text:
+        key: "tim-hint"
+        label: "My hint for xmas is…"
+      text:
+        key: "tim-address"
+        label: "Please send my xmas presents to…"
   - command: ".buildkite/steps/2-send-postcard-to-santa.bash"
-    label: "💌🎅🏼"
+    label: "💌:santa::skin-tone-3:"
