@@ -4,8 +4,32 @@ set -euo pipefail
 
 echo "+++ :christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree::unicorn_face::christmas_tree:"
 
-if [[ ! -z "${BUILDKITE:-}" ]]; then
-  NAMES=$(buildkite-agent meta-data get names)
+printf "\033[1;31m"
+cat <<"UNICORN"
+                       . . . .
+                       ,`,`,`,`,
+ . . . .               `\`\`\`\;
+ `\`\`\`\`,            ~|;!;!;\!
+  ~\;\;\;\|\          (--,!!!~`!       .
+ (--,\\\===~\         (--,|||~`!     ./
+  (--,\\\===~\         `,-,~,=,:. _,//
+   (--,\\\==~`\        ~-=~-.---|\;/J,
+    (--,\\\((```==.    ~'`~/       a |
+      (-,.\\('('(`\\.  ~'=~|     \_.  \
+         (,--(,(,(,'\\. ~'=|       \\_;>
+           (,-( ,(,(,;\\ ~=/        \
+           (,-/ (.(.(,;\\,/          )
+            (,--/,;,;,;,\\         ./------.
+              (==,-;-'`;'         /_,----`. \
+      ,.--_,__.-'                    `--.  ` \
+     (='~-_,--/        ,       ,!,___--. \  \_)
+    (-/~(     |         \   ,_-         | ) /_|
+    (~/((\    )\._,      |-'         _,/ /
+     \\))))  /   ./~.    |           \_\;
+  ,__/////  /   /    )  /
+   '===~'   |  |    (, <.
+            / /       \. \
+          _/ /          \_\
+         /_!/            >_\
 
-  echo "Sending secret santa info for $NAMES…"
-fi
+UNICORN
