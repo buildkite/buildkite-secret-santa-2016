@@ -15,7 +15,7 @@ inline_image 'artifact://secret-santa.gif' 'Buildkite Secret Santa 2016'
 echo
 echo "Welcome to the Buildkite Secret Santa! 👋"
 echo
-echo "Tell Santa your wishes, and when everyone is done Santa’s helpers will"
-echo "notify you to tell you who you received, and a hint for what they’d like"
-echo "for Christmas."
-
+echo "Tell Santa your wishes, and when everyone is done"
+echo "Santa’s helpers will let each of us know by email"
+echo "who we received, their address, and a hint for what"
+echo "they’d ❤️ for Christmas."
