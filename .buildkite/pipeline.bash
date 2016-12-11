@@ -20,10 +20,10 @@ for name in $NAMES; do
   - block: "📝 $name"
     prompt: "Dear Secret Santa…"
     fields:
-      - text: "Hint"
-        hint: "My hint for a present from my Secret Santa is…"
+      - text: "Pressie Hint"
+        hint: "My pressie hint is…"
         key: "hint-$name"
-      - text: "Address"
+      - text: "Delivery Address"
         hint: "Please send my xmas present to…"
         key: "address-$name"
 PIPELINE
@@ -31,5 +31,5 @@ done
 
 cat <<PIPELINE
   - command: "notify-santas-magical-unicorns.bash"
-    label: "💌 :santa::skin-tone-3::unicorn:"
+    label: "💌 :santa::skin-tone-3::unicorn_face:"
 PIPELINE
