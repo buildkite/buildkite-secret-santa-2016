@@ -121,7 +121,7 @@ xmastree() {
   let t=t+1
  done
 
- echo "$(tput setaf 7)"
+ printf "\033[0m"
 }
 CENTER=0
 SPACE=" "
