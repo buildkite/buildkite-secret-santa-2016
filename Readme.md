@@ -1,6 +1,8 @@
 <h1><img alt="Buildkite Secret Santa 2016" src="logo.gif" width="550" height="550"></h1>
 
-[![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
+[Buildkite](https://buildkite.com/)’s Secret Santa 2016 build pipeline, to find out xmas pressie hints from everyone, and notify each of us with who we’re buying for and what their hint was.
+
+## How does it work?
 
 The build pipeline:
 
@@ -15,6 +17,12 @@ The webhook receiver:
 ## Screenshot
 
 TODO
+
+## Test it yourself!
+
+Give this pipeline a try for yourself!
+
+[![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
 ## License
 
