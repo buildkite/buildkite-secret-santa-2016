@@ -11,7 +11,7 @@ function c_reset { printf "\033[0m";  }
 
 echo "+++ :christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree::buildkite::christmas_tree:"
 
-inline_image 'artifact://secret-santa.gif' 'Buildkite Secret Santa 2016'
+inline_image 'artifact://pipeline/secret-santa.gif' 'Buildkite Secret Santa 2016'
 
 ./pipeline/xmas-tree.bash
 

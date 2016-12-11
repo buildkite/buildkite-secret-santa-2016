@@ -12,7 +12,7 @@ cat <<PIPELINE
 steps:
   - command: "pipeline/readme.bash"
     label: "🎄 Readme"
-    artifact_paths: "*.gif"
+    artifact_paths: "pipeline/*.gif"
 PIPELINE
 
 for name in $NAMES; do
@@ -30,6 +30,6 @@ PIPELINE
 done
 
 cat <<PIPELINE
-  - command: "pipeline/notify-santas-magical-unicorns.bash"
+  - command: "pipeline/magical-unicorns.bash"
     label: "💌 :santa::skin-tone-3: :unicorn_face:"
 PIPELINE
