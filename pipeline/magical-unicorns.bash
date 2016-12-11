@@ -42,6 +42,8 @@ cat <<"UNICORN"
 UNICORN
 c_reset
 
-echo
-echo "Magical Christmas unicorn webhooks have been sent!"
-echo "Keep an eye on your email."
+cat <<MESSAGE
+
+Magical Christmas unicorn webhooks have been sent!"
+Keep an eye on your email.
+MESSAGE
