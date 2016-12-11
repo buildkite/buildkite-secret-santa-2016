@@ -10,7 +10,7 @@ fi
 
 cat <<PIPELINE
 steps:
-  - command: "readme.bash"
+  - command: "pipeline/readme.bash"
     label: "🎄 Readme"
     artifact_paths: "*.gif"
 PIPELINE
@@ -30,6 +30,6 @@ PIPELINE
 done
 
 cat <<PIPELINE
-  - command: "notify-santas-magical-unicorns.bash"
+  - command: "pipeline/notify-santas-magical-unicorns.bash"
     label: "💌 :santa::skin-tone-3: :unicorn_face:"
 PIPELINE

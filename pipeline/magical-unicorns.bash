@@ -1,10 +1,17 @@
 #!/bin/bash
 
+# This doesn't actually do any notifying. It actually just prints a brilliant
+# unicorn. The real notifying is done via the webhook receiver.
+
+# Color functions
+function c_red   { printf "\033[31m"; }
+function c_reset { printf "\033[0m";  }
+
 set -euo pipefail
 
 echo "+++ :christmas_tree::unicorn_face::christmas_tree:"
 
-printf "\033[1;31m"
+c_red
 cat <<"UNICORN"
                        . . . .
                        ,`,`,`,`,
@@ -33,3 +40,4 @@ cat <<"UNICORN"
          /_!/            >_\
 
 UNICORN
+c_reset
