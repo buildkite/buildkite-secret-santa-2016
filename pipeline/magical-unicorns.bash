@@ -43,5 +43,5 @@ UNICORN
 c_reset
 
 echo
-echo "Magical unicorn webhooks have been sent!"
+echo "Magical Christmas unicorn webhooks have been sent!"
 echo "Keep an eye on your email."
