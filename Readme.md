@@ -18,9 +18,9 @@ The webhook receiver:
 
 TODO
 
-## Test it yourself!
+## Give it a try
 
-Give this pipeline a try for yourself!
+You can add this pipeline to your own Buildkite account:
 
 [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
