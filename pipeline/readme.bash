@@ -15,7 +15,7 @@ inline_image 'artifact://pipeline/secret-santa.gif' 'Buildkite Secret Santa 2016
 
 ./pipeline/xmas-tree.bash
 
-cat <<"WELCOME"
+cat <<WELCOME
 
                $(c_red)Welcome to the Buildkite Secret Santa$(c_reset) 👋
 
