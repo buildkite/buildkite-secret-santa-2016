@@ -44,6 +44,7 @@ c_reset
 
 cat <<MESSAGE
 
-Magical Christmas unicorn webhooks have been sent!"
-Keep an eye on your email.
+👏 Magical Christmas unicorn webhooks have been sent!
+
+👀 Keep an eye on your email
 MESSAGE
