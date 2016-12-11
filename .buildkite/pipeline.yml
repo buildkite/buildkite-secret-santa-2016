@@ -1,6 +1,6 @@
 steps:
   - command: ".buildkite/steps/1-merry-xmas.bash"
-    label: "🎄"
+    label: "🎄 :wave:"
   - block: "📝 Keith"
   - block: "📝 Harriet"
   - block: "📝 Sam"
@@ -13,4 +13,4 @@ steps:
       - text: "Please send my xmas presents to…"
         key: "tim-address"
   - command: ".buildkite/steps/2-send-postcard-to-santa.bash"
-    label: "💌:santa::skin-tone-3:"
+    label: "💌 :santa::skin-tone-3:"
