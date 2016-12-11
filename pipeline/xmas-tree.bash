@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Christmas tree by rodrigo.pulido.gf@gmail.com
+# Christmas tree by Rodrigo Pulido
 #
 # https://github.com/rpulid/christmastree
 
