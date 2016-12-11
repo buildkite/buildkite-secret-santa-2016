@@ -24,10 +24,12 @@ BOLD=$(tput bold)
 COLORS=( $BLACK $GRAY $RED $LRED $GREEN $LGREEN $BRWORANGE $YELLOW
 $BLUE $LBLUE $PURPLE $LPURPLE $CYAN $LCYAN $WHITE )
 
+WIDTH=65
+
 func1 () {
   case "$1" in
   BLACK)
-          printf "${BLACK}$2"
+    printf "${BLACK}$2"
   ;;
   BRWORANGE)
     printf "${BRWORANGE}$2"
@@ -36,7 +38,7 @@ func1 () {
     printf "${YELLOW}$2"
   ;;
   GREEN)
-          printf "${GREEN}$2"
+    printf "${GREEN}$2"
   ;;
   GRAY)
     printf "${GRAY}$2"
@@ -54,7 +56,7 @@ func1 () {
 }
 func2 () {
   arr=( "8" "0" "o" "@" "*" "~" "-" "+" "^" "." "," "_" "=" "{" "}" "]" "[" ";" ":" "#" "$" "&" "!" );
-  cols=(  "YELLOW" "BLUE" "WHITE" "RED" )
+  cols=( "YELLOW" "BLUE" "WHITE" "RED" )
   randnum="$[RANDOM % 23]"
   if [ $randnum -gt "4" ];
   then
@@ -65,15 +67,15 @@ func2 () {
 }
 xmastree() {
  n=$(($(($(tput lines)*9))/10))
- if [ $(($n*2)) -gt $(tput cols) ];
+ if [ $(($n*2)) -gt $WIDTH ];
  then
-    n=$(($(tput cols)/2))
+    n=$(($WIDTH/2))
  fi
  i="1"
  while [ $i -lt $n ];
  do
    let k=$i
-   widht=$(($(tput cols)/2))
+   widht=$(($WIDTH/2))
    while [ $k -lt $widht ];
    do
      printf "${SPACE}"
@@ -118,17 +120,10 @@ xmastree() {
   echo ""
   let t=t+1
  done
+
+ tput sgr0
 }
 CENTER=0
 SPACE=" "
-arg1=$1
-if [ $# -gt 0 ];
- then
-    case "$arg1" in
-        loop)
-      watch --color -n .2 ./christmastree.sh
-    ;;
-    esac
- else
-  xmastree
-fi
+
+xmastree

@@ -6,6 +6,7 @@ cat <<PIPELINE
 steps:
   - command: "readme.bash"
     label: "🎄 Readme"
+    artifact_paths: "*.gif"
   - block
 PIPELINE
 
