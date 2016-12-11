@@ -1,0 +1,10 @@
+{
+  "name": "Buildkite Secret Santa 2016",
+  "steps": [
+    {
+      "type": "script",
+      "name": "➡️",
+      "command": "pipeline/pipeline.bash | buildkite-agent pipeline upload"
+    }
+  ]
+}

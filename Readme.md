@@ -1,4 +1,6 @@
-<img alt="Buildkite Secret Santa 2016" src="buildkite-secret-santa-2016.gif" width="275" height="275">
+<img alt="Buildkite Secret Santa 2016" src="logo.gif" width="275" height="275">
+
+[![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
 The build pipeline:
 
@@ -9,3 +11,11 @@ The build pipeline:
 The webhook receiver:
 
 * TODO
+
+## Screenshot
+
+TODO
+
+## License
+
+See [Licence.md](Licence.md) (MIT)
