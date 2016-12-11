@@ -29,5 +29,5 @@ done
 
 cat <<PIPELINE
   - command: "notify-santas-magical-unicorns.bash"
-    label: "💌 :santa::skin-tone-3:"
+    label: "💌 :santa::skin-tone-3::unicorn:"
 PIPELINE
