@@ -8,11 +8,9 @@ steps:
   - block: "📝 Tim"
     prompt: "Dear Secret Santa…"
     fields:
-      text:
+      - text: "My hint for xmas is…"
         key: "tim-hint"
-        label: "My hint for xmas is…"
-      text:
+      - text: "Please send my xmas presents to…"
         key: "tim-address"
-        label: "Please send my xmas presents to…"
   - command: ".buildkite/steps/2-send-postcard-to-santa.bash"
     label: "💌:santa::skin-tone-3:"
