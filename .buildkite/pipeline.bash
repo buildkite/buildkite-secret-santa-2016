@@ -20,9 +20,11 @@ for name in $NAMES; do
   - block: "📝 $name"
     prompt: "Dear Secret Santa…"
     fields:
-      - text: "My hint for xmas is…"
+      - text: "Hint"
+        hint: "My hint for a present from my Secret Santa is…"
         key: "hint-$name"
-      - text: "Please send my xmas presents to…"
+      - text: "Address"
+        hint: "Please send my xmas present to…"
         key: "address-$name"
 PIPELINE
 done
