@@ -13,9 +13,9 @@ echo "+++ :christmas_tree::christmas_tree::christmas_tree::christmas_tree::chris
 inline_image 'artifact://secret-santa.gif' 'Buildkite Secret Santa 2016'
 
 echo
-tput setaf 1
+echo "$(tput setaf 1)"
 echo "            Welcome to the Buildkite Secret Santa 👋"
-tput sgr0
+echo "$(tput sgr0)"
 echo
 echo "        Tell Santa your wishes. And when everyone is done,"
 echo "          Santa’s magical unicorns will let each of us"
