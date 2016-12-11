@@ -1,6 +1,6 @@
 steps:
   - command: ".buildkite/steps/1-merry-xmas.bash"
-    label: "🎄 :wave:"
+    label: "🎄 Readme"
   - block: "📝 Keith"
   - block: "📝 Harriet"
   - block: "📝 Sam"
