@@ -4,6 +4,6 @@
     "shuffle-seed": "^1.1.6"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha *.test.js"
   }
 }

@@ -5,7 +5,7 @@ const jobEventProcesssor = require('./job-event-processor').process;
 
 describe('secretSanta', function() {
   context('with a valid payload body', function() {
-    const payload = fs.readFileSync('tests/job-finished-payload.json');
+    const payload = JSON.parse(fs.readFileSync('tests/job-finished-payload.json'));
 
     it('returns hints', function() {
       const secretSantaList = secretSanta(42, jobEventProcesssor(payload));
@@ -61,7 +61,7 @@ describe('secretSanta', function() {
   })
 
   context('with a payload body for a non-unicorn event', function() {
-    const payload = fs.readFileSync('tests/job-finished-incorrect-payload.json');
+    const payload = JSON.parse(fs.readFileSync('tests/job-finished-incorrect-payload.json'));
 
     it('returns null', function() {
       const secretSantaList = secretSanta(42, jobEventProcesssor(payload));
@@ -71,7 +71,7 @@ describe('secretSanta', function() {
   });
 
   context('with a payload body for a build.finished event', function() {
-    const payload = fs.readFileSync('tests/build-finished-payload.json');
+    const payload = JSON.parse(fs.readFileSync('tests/build-finished-payload.json'));
 
     it('returns null', function() {
       const secretSantaList = secretSanta(42, jobEventProcesssor(payload));

@@ -12,9 +12,7 @@ const commandPattern = /magical\-unicorns/;
 //     Tim:  { hint: "Tim's hint",  address: "Tim's address" },
 //     Jess: { hint: "Jess's hint", address: "Jess's address" },
 //   }
-exports.process = function(payloadBody) {
-  const payload = JSON.parse(payloadBody);
-
+exports.process = function(payload) {
   if (payload.event != eventName) return;
   if (!payload.job.command.match(commandPattern)) return;
 
