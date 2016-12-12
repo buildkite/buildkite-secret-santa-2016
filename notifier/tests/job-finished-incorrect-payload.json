@@ -1,0 +1,6 @@
+{
+  "event": "job.finished",
+  "job": {
+    "command": "pipeline/pipeline.bash"
+  }
+}

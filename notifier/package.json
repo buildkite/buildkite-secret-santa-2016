@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mocha": "^3.2.0",
+    "shuffle-seed": "^1.1.6"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
