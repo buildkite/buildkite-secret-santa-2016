@@ -19,6 +19,7 @@ for name in $NAMES; do
   cat <<PIPELINE
   - block: "📝 $name"
     prompt: "Dear Secret Santa…"
+    submit: "Lock it in Eddy!"
     fields:
       - text: "Pressie Hint"
         hint: "My xmas pressie hint is…"
