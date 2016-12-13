@@ -22,9 +22,11 @@ The webhook receiver:
 
 Massive props to the brilliant [Carla Hackett](http://carlahackett.com/) for the beaut lettering 👌
 
-## Screenshot
+## Screenshots
 
 ![Buildkite Secret Santa Pipeline](screenshot.png)
+
+<img alt="Buildkite Secret Santa 2016 Unblock Prompt Animation" src="screenshot-unblock.gif" width="724" height="506">
 
 ## License
 
