@@ -12,11 +12,7 @@ The build pipeline:
 
 The webhook receiver:
 
-* TODO
-
-## Screenshots
-
-TODO
+* [notifier/index.js](notifier/index.js) - accepts the `job.finished` webhook from Buildkite, randomly assigns secret santa’s, and emails everyone with the hint and delivery address
 
 ## Give it a try
 
