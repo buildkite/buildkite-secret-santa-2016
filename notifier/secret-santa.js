@@ -24,20 +24,20 @@ const people = {
 //
 //   returns:
 //
-//   {
-//     Jess:    { email: '...', received: { name: 'Tim',     hint: 'Tim's hint',     address: 'Tim's address' } },
-//     Tim:     { email: '...', received: { name: 'Keith',   hint: 'Keith's hint',   address: 'Keith's address' } },
-//     Keith:   { email: '...', received: { name: 'Sam',     hint: 'Sam's hint',     address: 'Sam's address' } },
-//     Sam:     { email: '...', received: { name: 'Harriet', hint: 'Harriet's hint', address: 'Harriet's address' } },
-//     Harriet: { email: '...', received: { name: 'Jess',    hint: 'Jess's hint',    address: 'Jess's address' } },
-//   }
-exports.secretSanta = function(seed, answers) {
+//   [
+//     { name: 'Jess',    email: '...', received: { name: 'Tim',     hint: 'Tim's hint',     address: 'Tim's address' } },
+//     { name: 'Tim',     email: '...', received: { name: 'Keith',   hint: 'Keith's hint',   address: 'Keith's address' } },
+//     { name: 'Keith',   email: '...', received: { name: 'Sam',     hint: 'Sam's hint',     address: 'Sam's address' } },
+//     { name: 'Sam',     email: '...', received: { name: 'Harriet', hint: 'Harriet's hint', address: 'Harriet's address' } },
+//     { name: 'Harriet', email: '...', received: { name: 'Jess',    hint: 'Jess's hint',    address: 'Jess's address' } },
+//   ]
+exports.calculate = function(seed, answers) {
   if (!answers) return;
 
   const shuffledNames = shuffleSeed.shuffle(Object.keys(people), seed);
 
-  return shuffledNames.reduce((acc, name, index, names) => {
-    const receivedName = names[index + 1] || names[0]
+  return shuffledNames.map((name, index) => {
+    const receivedName = shuffledNames[index + 1] || shuffledNames[0]
     const answer = answers[receivedName];
 
     if (!answer) {
@@ -52,16 +52,22 @@ exports.secretSanta = function(seed, answers) {
       throw new Error(`Missing address for ${receivedName}`);
     }
 
-    acc[name] = {
+    return {
+      name: name,
       email: people[name],
       received: {
         name: receivedName,
-        email: people[receivedName],
         hint: answer.hint,
         address: answer.address
       }
-    }
-
-    return acc;
+    };
   }, {})
+}
+
+exports.message = function(listItem) {
+  return `Hi!\n\n` +
+    `You received:\n${listItem.received.name}\n\n` +
+    `Their xmas pressie hint:\n${listItem.received.hint}\n\n` +
+    `Their delivery address:\n${listItem.received.address}\n\n` +
+    `Lots of love,\nSanta’s Magical Unicorns`;
 }
