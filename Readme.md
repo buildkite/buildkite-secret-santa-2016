@@ -24,9 +24,9 @@ Massive props to the brilliant [Carla Hackett](http://carlahackett.com/) for the
 
 ## Screenshots
 
-![Buildkite Secret Santa Pipeline](screenshot.png)
+<p align="center"><img alt="Buildkite Secret Santa 2016" src="screenshot.png"></p>
 
-<img alt="Buildkite Secret Santa 2016 Unblock Prompt Animation" src="screenshot-unblock.gif" width="724" height="506">
+<p align="center"><img alt="Buildkite Secret Santa 2016 Unblock Prompt Animation" src="screenshot-unblock.gif" width="724" height="506"></p>
 
 ## License
 
