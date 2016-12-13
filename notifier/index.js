@@ -30,7 +30,7 @@ function sendEmail(listItem, done) {
   var params = {
     Source: adminEmail,
     Destination: {
-      ToAddresses: [adminEmail],
+      ToAddresses: [`"${listItem.name}" <${listItem.email}>`],
     },
     Message: {
       Body: {
@@ -40,7 +40,7 @@ function sendEmail(listItem, done) {
         }
       },
       Subject: {
-        Data: 'Hello Buildkite Secret Santa',
+        Data: '🎄 Hello Buildkite Secret Santa',
         Charset: 'UTF-8'
       }
     }
