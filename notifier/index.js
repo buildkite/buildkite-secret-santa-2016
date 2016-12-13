@@ -4,7 +4,7 @@ const secretSanta = require('./secret-santa');
 const randomSeed = parseInt(process.env['SECRET_SANTA_RANDOM_SEED']) || 42;
 
 exports.handler = function (event, context) {
-	console.log('Received webhook event:', JSON.stringify(event));
+  console.log('Received webhook event:', JSON.stringify(event));
 
   const answers = jobEventProcesssor(event);
 
