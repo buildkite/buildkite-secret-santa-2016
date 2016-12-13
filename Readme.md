@@ -22,6 +22,10 @@ The webhook receiver:
 
 Massive props to the brilliant [Carla Hackett](http://carlahackett.com/) for the beaut lettering 👌
 
+## Screenshot
+
+![Buildkite Secret Santa Pipeline](screenshot.png)
+
 ## License
 
 See [Licence.md](Licence.md) (MIT)
