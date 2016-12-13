@@ -6,13 +6,15 @@
 
 The build pipeline:
 
-* [pipeline/pipeline.bash](pipeline/pipeline.bash) - generates the Buildkite pipeline that requests Secret Santa hints from everyone
-* [pipeline/readme.bash](pipeline/readme.bash) - the first step in the pipeline that welcomes everyone to this year’s Secret Santa
-* [pipeline/magical-unicorns.bash](pipeline/magical-unicorns.bash) - the last step in the pipeline: a brilliantly red magical unicorn
+* [pipeline/pipeline.bash](pipeline/pipeline.bash) - generates the Buildkite pipeline that requests Secret Santa hints from everyone.
+* [pipeline/readme.bash](pipeline/readme.bash) - the first step in the pipeline that welcomes everyone to this year’s Secret Santa.
+* [pipeline/magical-unicorns.bash](pipeline/magical-unicorns.bash) - the last step in the pipeline: a brilliantly red magical unicorn.
 
 The webhook receiver:
 
-* [notifier/index.js](notifier/index.js) - accepts the `job.finished` webhook from Buildkite, randomly assigns secret santa’s, and emails everyone with the hint and delivery address
+* [notifier/index.js](notifier/index.js) - the AWS Lambda function that accepts the `job.finished` webhook from Buildkite, randomly assigns secret santas, and emails everyone with the hint and delivery address.
+* [notifier/job-event-processor.js](notifier/index.js) - extracts the information submitted by everyone from the webhook’s build meta-data.
+* [notifier/secret-santa.js](notifier/index.js) - randomly assigns each secret santa based on a determistic seed value for safe re-execution. The seed is read from an environment variable so it can be changed at the last minute, to keep the "secret" in "Secret Santa".
 
 ## Give it a try
 
