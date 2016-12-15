@@ -1,4 +1,4 @@
-<h1><img alt="Buildkite Secret Santa 2016" src="logo.gif" width="550" height="550"></h1>
+<h1><img alt="Buildkite Secret Santa 2016" src="logo.gif" width="550"></h1>
 
 [Buildkite](https://buildkite.com/)’s Secret Santa 2016 build pipeline, to find out xmas pressie hints from everyone, and notify each of us with who we’re buying for and what their hint was.
 
